@@ -20,7 +20,7 @@ button.addEventListener('click',(e)=>{
 
             case 'DEL':
                 let val = inputValue.innerText;
-                inputValue.innerText = val.slice(0,val.length-1); // if it is a DEL button, we remove the string by slicing the string
+                inputValue.innerText = val.slice(0,val.length-1); // if it is a DEL button, we remove the last character by slicing the string
                 break;
 
             default:
