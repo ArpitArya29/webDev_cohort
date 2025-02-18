@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.main_container{
+    position: relative;
+    top: 1em;
+    background-color: #4b4a4a;
+    height: 20rem;
+    width: 30rem;
+    padding: 1em;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px 5px 0px 5px;
+}
+
+.inputs{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: #6a578a;
+}
+
+.weight_input, .height_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    
+}
+
+input{
+    height: 2em;
+    font-weight: 700;
+    padding: 5px;
+    background-color: #2b2727;
+    color: #fff;
+}
+
+#submit_btn{
+    width: 100%;
+    margin: 1em;
+    padding: 1em;
+    background-color: #55043a;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 750;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+#submit_btn:hover{
+    box-shadow: 0 0 5px rgb(165, 164, 164);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+
+
+.bmi-scale {
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to right, blue 18.5%, green 24.9%, yellow 40%, red 100%);
+    position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.indicator {
+    width: 10px;
+    height: 30px;
+    background: black;
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    transition: left 0.3s ease-in-out;
+}
+
+.bmi-label {
+    position: absolute;
+    bottom: 30px; /* Moves it above the indicator */
+    left: 50%;
+    transform: translateX(-50%);
+    background: black;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.chart{
+    width: 30em;
+    height: 20em;
+    border: 2px solid;
+    padding: 1em;
+    background-color: #747171;
+    border-radius: 5px 0px 20px 0px;
+    margin-top: 20px;
+}
+.chart table{
+    width: 100%;
+    text-align: center;
+}
+.chart p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: underline;
+}

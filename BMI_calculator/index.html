@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate your Body Mass</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="inputs">
+        <div class="weight_input">
+          <label for="Weight">Weight (in kg):</label>
+          <input id="weightValue" type="number" placeholder="Your Wight" />
+        </div>
+        <div class="height_input">
+          <label for="Height">Height (in cms):</label>
+          <input id="heightValue" type="number" placeholder="Your height" />
+        </div>
+      </div>
+      <button id="submit_btn">Calculate Your Body-Mass</button>
+      <div class="bmi-scale">
+        <div class="indicator" id="bmi-indicator">
+          <div class="bmi-label" id="bmi-label">--</div>
+        </div>
+      </div>
+    </div>
+    <div class="chart">
+      <table>
+        <p>BMI Chart</p>
+        <tr>
+          <th>BMI Range</th>
+          <th>Category</th>
+          <th>Color</th>
+        </tr>
+        <tr>
+          <td>upto 18.5</td>
+          <td>UnderWeight</td>
+          <td style="background-color: blue"></td>
+        </tr>
+        <tr>
+          <td>18.5 - 24.9</td>
+          <td>Normal Weight</td>
+          <td style="background-color: green"></td>
+        </tr>
+        <tr>
+          <td>25 - 36</td>
+          <td>OverWeight</td>
+          <td style="background-color: yellow"></td>
+        </tr>
+        <tr>
+          <td>more than 36</td>
+          <td>Extremely Obese</td>
+          <td style="background-color: red"></td>
+        </tr>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
